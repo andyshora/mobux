@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Mobile UX Experiment</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.preview').click(function() {
+        $('body').removeClass('splash');
+      });
+    })
+  </script>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background: #ccc;
+      overflow: auto;
+      width: 100%;
+    }
+    section {
+      width: 180%;
+      height: 200px;
+      padding: 10px 0;
+      background: white;
+      font-size: 0;
+    }
+    section.tall {
+      height: 400px;
+    }
+    .splash > section {
+      width: 100%;
+    }
+    section > div.preview {
+      width: 46%;
+      height: 100%;
+      margin: 0 1%;
+      padding: 0 1%;
+      background: lightBlue;
+      display: none;
+      font-size: 11px;
+      cursor: pointer;
+    }
+    section > div.content {
+      width: 46%;
+      height: 100%;
+      margin: 0 1%;
+      padding: 0 1%;
+      background: lightBlue;
+      display: inline-block;
+      font-size: 11px;
+    }
+    .splash > section > div.content {
+      display: none;
+    }
+    .splash > section > div.preview {
+      display: inline-block;
+    }
+    section > div:nth-child(odd) {
+      background: red;
+    }
+  </style>  
+
+</head>
+<body class="splash">
+  <section>
+    <div class="preview">
+      <p>Preview</p>
+    </div>
+    <div class="preview">
+      <p>Preview</p>
+    </div>
+    <div class="content">
+      <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
+    </div>
+    <div class="content">
+      <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
+    </div>
+  </section>
+  <section class="tall">
+    <div class="preview">
+      <p>Preview</p>
+    </div>
+    <div class="preview">
+      <p>Preview</p>
+    </div>
+    <div class="content">
+      <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
+    </div>
+    <div class="content">
+      <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
+    </div>
+  </section>
+  <section>
+    <div class="preview">
+      <p>Preview</p>
+    </div>
+    <div class="preview">
+      <p>Preview</p>
+    </div>
+    <div class="content">
+      <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
+    </div>
+    <div class="content">
+      <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
+    </div>
+  </section>
+</body>
+</html>
