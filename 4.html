@@ -132,7 +132,7 @@
         $('header').removeClass('fixed');
       }
     });
-    $('header').bind('click', function(e) {
+    $('header').bind('touchstart', function(e) {
       console.log('e -> ', e.offsetX);
 
       $('.container').toggleClass('left');
