@@ -46,7 +46,7 @@
 
     .container {
       width: 320px;
-      overflow: auto;
+      overflow: hidden;
     }
     .container > section {
       width: 180%;
@@ -54,6 +54,16 @@
       padding: 10px 0;
       background: white;
       font-size: 0;
+
+      transition: all .5s ease-in-out;
+      -webkit-transition: all .5s ease-in-out;
+
+      -webkit-transform: translate(-270px);
+      transform: translate(-270px);
+    }
+    .left > section {
+      -webkit-transform: translate(0px);
+      transform: translate(0px);
     }
     section.tall {
       height: 400px;
@@ -118,6 +128,23 @@
         $('header').removeClass('fixed');
       }
     });
+    $('header').bind('click', function(e) {
+      console.log('e -> ', e.offsetX);
+
+      $('.container').toggleClass('left');
+
+      if (e.offsetX > 160) {
+        // right side
+        console.log('right -> ');
+        
+
+      } else {
+        // left side
+        console.log('left -> ');
+
+      }
+
+    });
   });
   </script>
 
@@ -126,7 +153,7 @@
   <nav></nav>
   <header></header>
   <section class="full"></section>
-  <div class="container">
+  <div class="container left">
     <section class="inner">
       <div></div>
     </section>
