@@ -22,8 +22,9 @@
       width: 100%;
     }
     header {
-      background: black;
-      height: 50px;
+      background: white url(images/NAVTITLE.png) 0 20px no-repeat;
+      background-size: 100%;
+      height: 60px;
       width: 100%;
       position: static;
       top: auto;
@@ -33,11 +34,12 @@
       position: fixed;
       top: 0;
       left: 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     nav {
       height: 50px;
-      
-      background: yellow;
+      background: url(images/TOPNAV.png) 0 0 no-repeat;
+      background-size: 100%;
     }
 
     .container {
@@ -86,7 +88,20 @@
       background: red;
     }
 
-    
+    section.full {
+      height: 190px;
+      background: url(images/STATS.png) 0 0 no-repeat;
+      background-size: 100%;
+    }
+  
+    section.inner {
+      height: 1500px;
+    }
+    section.inner > div {
+      height: 1500px;
+      background: url(images/BODY.png) 0 0 no-repeat;
+      background-size: 100%;
+    }
 
 
   </style>  
@@ -107,77 +122,10 @@
 <body>
   <nav></nav>
   <header></header>
-  <section class="sticky"></section>
+  <section class="full"></section>
   <div class="container">
-    <section>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
-    </section>
-    <section>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
-    </section>
-    <section>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
-    </section>
-    <section>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
-    </section>
-    <section>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="preview">
-        <p>Preview</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
-      <div class="content">
-        <p><a href="http://www.google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> Illum, culpa, praesentium illo maxime magni omnis consequatur cupiditate quasi facilis molestias odit perferendis totam beatae quas non error odio recusandae aliquam impedit voluptatem dolorem rem quos quibusdam voluptas tempore distinctio ratione.</p>
-      </div>
+    <section class="inner">
+      <div></div>
     </section>
   </div>
 </body>
